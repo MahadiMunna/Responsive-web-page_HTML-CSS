@@ -46,11 +46,18 @@ header {
     text-decoration: none;
     color: white;
     padding: 13px 25px;
+
+}
+.button:hover{
+    background-color: #dd6300;
+    padding: 16px 28px;
+    transform: rotate(360deg);
+    border-radius: 10px;
 }
 
 .banner-image {}
 
-/* main section  */
+/* main section - sidebar and blogs */
 main {
     margin: 8%;
 }
@@ -62,6 +69,7 @@ main {
     margin-top: 100px;
 }
 
+/* side navigation menu */
 .navbar {
     height: 270px;
     background-color: rgba(22, 22, 22, 1);
@@ -97,6 +105,7 @@ main {
     padding: 20px 50px;
 }
 
+/* article section */
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,6 +134,8 @@ main {
     color: black;
     font-size: 10px;
 }
+
+/* view all button */
 .view-all{
     display: flex;
     justify-content: center;
@@ -142,6 +153,7 @@ main {
     padding: 15px 30px;
 }
 
+/* webpage-2 part */
 .routine {
     padding: 30px 25px;
     border: .1px solid rgba(22, 22, 22, 0.1);
@@ -200,6 +212,7 @@ footer {
     border: .1px solid rgba(255, 255, 255, 0.258);
 }
 
+/* footer links */
 .footer-menu {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -221,6 +234,7 @@ footer {
 
 /* media queries */
 
+/* media queries for mobile */
 @media only screen and (max-width: 688px) {
     .banner-section {
         flex-direction: column;
@@ -282,6 +296,7 @@ footer {
     }
 }
 
+/* media queries for tablet */
 @media only screen and (min-width: 688px) and (max-width:992px) {
     .main-section {
         grid-template-columns: 1fr;
