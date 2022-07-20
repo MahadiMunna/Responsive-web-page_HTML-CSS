@@ -7,6 +7,16 @@ body {
     margin: 0;
 }
 
+@keyframes color-change{
+    from{
+        background-color: #DD0000;
+    }
+
+    to{
+        background-color: rgb(212, 0, 255);
+    }
+}
+
 /* banner section  */
 header {
     margin: 8%;
@@ -20,6 +30,7 @@ header {
 }
 
 .banner-article {
+    width: 50%;
     color: white;
     padding: 27px;
 
@@ -49,13 +60,18 @@ header {
 
 }
 .button:hover{
-    background-color: #dd6300;
+    animation: color-change 3s infinite;
     padding: 16px 28px;
     transform: rotate(360deg);
     border-radius: 10px;
 }
-
-.banner-image {}
+.banner-image{
+    justify-content: center;
+}
+.banner-image img {
+    width: 100%;
+    height: 300px;
+}
 
 /* main section - sidebar and blogs */
 main {
